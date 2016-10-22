@@ -58,15 +58,14 @@
     	<section class="posts">
     		<div class="container">
             	<div class="row">
-                    <?php get_sidebar('two');?>
 		    		<?php while (have_posts()): the_post()?>
-										<div class="col-md-3">
-				                            <a href="<?php the_permalink();?>">
-											<h3><?php echo the_title(); ?> <small><?php the_author();?></small></h3>
-				                            </a>
+											<div class="col-md-3">
+					                            <a href="<?php the_permalink();?>">
+												<h3><?php echo the_title(); ?> <small><?php the_author();?></small></h3>
+					                            </a>
 
-										</div>
-									<?php endwhile;?>
+											</div>
+										<?php endwhile;?>
 				</div>
 			</div>
 		</section>
